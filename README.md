@@ -75,7 +75,7 @@ En simpel lösning är att kombinera filer av samma typ [4, s15-16]. I Labby Mes
 Att ha skript och stilmallar inbakade i HTML-dokument leder till färre HTTP-requests, vilket kan vara gynsamt för webbplatser som enskilda användare sällan besöker. Om man istället har dem i externa filer blir det det fler HTTP-requests första gången en avändare besöker webbplatsen, men man ger webbläsaren möjlighet att cachea filerna, vilket gör att kommande besök kommer gå snabbare [4, 55-56]. 
 
 #### Åtgärd
-I Labby Message fall är det tänkt att man ska återkomma ofta, och det rekomenderas därför att använda externa filer.
+I Labby Message fall är det tänkt att man ska återkomma ofta, och det rekommenderas därför att använda externa filer.
 
 ### P3. Resurser cacheas inte
 
