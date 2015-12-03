@@ -24,12 +24,12 @@ Genom att inte hantera sessioner på rätt sätt tillåter man användare att f�
 Andra användare kan genom samma webbläsare på samma dator ta sig in på en annan persons konto, och på så sätt komma åt eventuell känslig information, eller utföra saker i en annan persons namn(konto)[1, A2].
 
 #### Åtgärd
-Nogrann implementering av session/cookie-hantering. OWASP tillhandahåller ett Cheat Sheet för att hjälpa utvecklare med detta [2].
+Noggrann implementering av session/cookie-hantering. OWASP tillhandahåller ett Cheat Sheet för att hjälpa utvecklare med detta [2].
 
 ### Cross-Site Scripting
 
 #### Problem
-Genom att uttnytja dålig validering och implementering av forumlär kan användare skicka med egna skript[1, A3]. I Labby Messages fall går det att köra script från meddelanderutan.
+Genom att utnyttja dålig validering och implementering av forumlär kan användare skicka med egna skript[1, A3]. I Labby Messages fall går det att köra skript från meddelanderutan.
 
 #### Konsekvens
 Genom att köra egna skript kan man till exempel komma åt cookie-information, ta över andra användares webbläsare eller köra annan illasinnad kod [1, A3].
@@ -72,7 +72,7 @@ En simpel lösning är att kombinera filer av samma typ [4, s15-16]. I Labby Mes
 ### P2. Skript- och stilmallar är inbakade i HTML-dokumentet
 
 #### Konsekvenser
-Att ha skript och stilmallar inbakade i HTML-dokument leder till färre HTTP-requests, vilket kan vara gynsamt för webbplatser som enskilda användare sällan besöker. Om man istället har dem i externa filer blir det det fler HTTP-requests första gången en avändare besöker webbplatsen, men man ger webbläsaren möjlighet att cachea filerna, vilket gör att kommande besök kommer gå snabbare [4, 55-56]. 
+Att ha skript och stilmallar inbakade i HTML-dokument leder till färre HTTP-requests, vilket kan vara gynsamt för webbplatser som enskilda användare sällan besöker. Om man istället har dem i externa filer blir det det fler HTTP-requests första gången en användare besöker webbplatsen, men man ger webbläsaren möjlighet att cachea filerna, vilket gör att kommande besök kommer gå snabbare [4, 55-56]. 
 
 #### Åtgärd
 I Labby Message fall är det tänkt att man ska återkomma ofta, och det rekommenderas därför att använda externa filer.
@@ -111,7 +111,7 @@ Ta bort länkningen till berörda resurser.
 
 ## egna reflektioner
 
-Labby Message är en liten applikation med små filer. Detta betyder att rent prestandamessigt gör det inte lika stor skillnad som på en stor applikation med mycket större filer. Därför har jag valt att inte inkludera minification och gzip, då skillnaden inte är särskilt stor. Souders menar på sidan 30 i High Performance Web Sites att de CPU-resurser som används för detta gör det onödigt med gzip/minification för mindre filer/applikationer. 
+Labby Message är en liten applikation med små filer. Detta betyder att rent prestandamässigt gör det inte lika stor skillnad som på en stor applikation med mycket större filer. Därför har jag valt att inte inkludera minification och gzip, då skillnaden inte är särskilt stor. Souders menar på sidan 30 i High Performance Web Sites att de CPU-resurser som används för detta gör det onödigt med gzip/minification för mindre filer/applikationer. 
 
-Den stora fokusen bör istället ligga på att åtgärda de säkerhetshål som finns. Labby Message är tänkt att användas som en intern todo-lista och det är mycket viktigt att endast inloggade användare kommer åt den. Därför anser jag att säkerhetshålen bör åtgärdas innan applikationen börjar användas, medan prestandaförbättringarna gör så pass liten skillnad i detta fall att man bör överväga om det är slöseri med resurser att förbättra prestandan, eller om det kan vara en bra investering om man tänker sig att applikationen senare ska växa och användas i större sammanhäng. 
+Den stora fokusen bör istället ligga på att åtgärda de säkerhetshål som finns. Labby Message är tänkt att användas som en intern todo-lista och det är mycket viktigt att endast inloggade användare kommer åt den. Därför anser jag att säkerhetshålen bör åtgärdas innan applikationen börjar användas, medan prestandaförbättringarna gör så pass liten skillnad i detta fall att man bör överväga om det är slöseri med resurser att förbättra prestandan, eller om det kan vara en bra investering om man tänker sig att applikationen senare ska växa och användas i större sammanhang. 
 
