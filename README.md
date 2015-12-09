@@ -115,3 +115,13 @@ Labby Message är en liten applikation med små filer. Detta betyder att rent pr
 
 Den stora fokusen bör istället ligga på att åtgärda de säkerhetshål som finns. Labby Message är tänkt att användas som en intern todo-lista och det är mycket viktigt att endast inloggade användare kommer åt den. Därför anser jag att säkerhetshålen bör åtgärdas innan applikationen börjar användas, medan prestandaförbättringarna gör så pass liten skillnad i detta fall att man bör överväga om det är slöseri med resurser att förbättra prestandan, eller om det kan vara en bra investering om man tänker sig att applikationen senare ska växa och användas i större sammanhang. 
 
+## källor
+
+[https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013](1)
+
+https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013
+https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
+https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
+S. Souders, High performance web sites. O’Reilly, 2007.
+
+
