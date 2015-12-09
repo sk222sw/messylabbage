@@ -117,11 +117,10 @@ Den stora fokusen bör istället ligga på att åtgärda de säkerhetshål som f
 
 ## källor
 
-[https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013](1)
-
-https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013
-https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
-https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
-S. Souders, High performance web sites. O’Reilly, 2007.
+1. https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013
+2. https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013
+3. https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
+4. https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
+5. S. Souders, High performance web sites. O’Reilly, 2007.
 
 
