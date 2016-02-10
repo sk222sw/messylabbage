@@ -51,7 +51,8 @@ Någon typ av auktoriseringskontroll på servern som inte tillåter vanliga anv�
 ### Cross-Site Request Forgery
 
 #### Problem
-En användare går in på en webbsida som innehåller falska HTTP-requests, och en illasinnad användare kan på så sätt få tag på till exempel cookie-information från andra användare [1, A8]. 
+
+Genom att en obehörig användare får en inloggad användares webbläsare att skicka falska HTTP-requests till den obehörige kan man komma över session cookies. Den obehörige användaren kan då komma runt autentisering som den inloggade användaren och lura webbplatser [1, A8].
 
 #### Konsekvens
 Med information från andra användares cookies kan man utföra saker i andra användares namn. 
